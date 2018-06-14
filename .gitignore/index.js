@@ -59,7 +59,7 @@ bot.on('message', message => {
     var key_word1 = new RegExp("Zenka");var key_word2 = new RegExp("bisous sucrés");
     test = key_word1.test(message.content); var test2= key_word2.test(message.content)
     if(  (test && test2) && (message.author.username === 'Sαyen-∧lphα') ){
-        message.channel.sendMessage("Oui elle est kiffe les bisous sucrés ! Hein Zenka")
+        message.channel.sendMessage("Oui elle kiffe les bisous sucrés ! Hein Zenka")
     }
     
 })
