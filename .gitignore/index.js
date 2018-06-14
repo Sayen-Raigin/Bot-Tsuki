@@ -33,7 +33,6 @@ bot.on('message', message => {
     
     
     // ---------------------------------- Partie délire ----------------------------------//
-    
     if(message.content === Prefix+'bot'){
         message.reply(
             "Je suis Tsuki :p "
@@ -52,6 +51,10 @@ bot.on('message', message => {
     if(test && message.author.username !== 'Tsuki-Bot'){
         message.reply("Oui ?")
     }
+    
+    
+    
+    // ---------------------------------- Partie troll ----------------------------------//
     
     var key_word1 = new RegExp("Zenka");var key_word2 = new RegExp("bisous sucrés");
     test = key_word1.test(message.content); var test2= key_word2.test(message.content)
