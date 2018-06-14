@@ -10,6 +10,7 @@ var PrefixGet='!';
 
 bot.on('message', message => {
     
+    // ---------------------------------- Partie commande ----------------------------------//
     if((message.content === Prefix+'h')){
         message.author.sendMessage(
             '\n'+
@@ -18,13 +19,6 @@ bot.on('message', message => {
             +"$$Add-Role @user      => Ajoute le role modo"+'\n'+'\n'
             +"$$Remove-Role @user      => Supprime le role modo"+'\n'+'\n'
             +"----------------------------------------------------------------------"
-        )
-    }
-    
-    if(message.content === Prefix+'bot'){
-        message.reply(
-            "Je suis Tsuki :p "
-            +'\n'+"mon premier discord est "+message.guild.name+", (^_^)"
         )
     }
     
@@ -38,16 +32,31 @@ bot.on('message', message => {
     }
     
     
+    // ---------------------------------- Partie délire ----------------------------------//
+    
+    if(message.content === Prefix+'bot'){
+        message.reply(
+            "Je suis Tsuki :p "
+            +'\n'+"mon premier discord est "+message.guild.name+", (^_^)"
+        )
+    }
     
     var key_word = new RegExp("best opening");
     var test = key_word.test(message.content);
     if(test){
         message.channel.sendMessage("https://www.youtube.com/watch?v=uSfhsBMA2io&t=")
     }
+    
     key_word = new RegExp("suki");
     test = key_word.test(message.content);
     if(test && message.author.username !== 'Tsuki-Bot'){
         message.reply("Oui ?")
+    }
+    
+    var key_word1 = new RegExp("Zenka");var key_word2 = new RegExp("bisous sucrés");
+    test = key_word.test(message.content);
+    if(key_word1 && key_word2 && message.author.username === 'Sαyen-∧lphα'){
+        message.channel.sendMessage("Oui elle est kiffe les bisous sucrés ! Hein @Zenka#0373")
     }
     
 })
