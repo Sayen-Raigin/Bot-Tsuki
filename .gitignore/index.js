@@ -49,7 +49,7 @@ bot.on('message', message => {
     key_word = new RegExp("suki");
     test = key_word.test(message.content);
     if(test && message.author.username !== 'Tsuki-Bot'){
-        message.reply("Oui ?")
+        //message.reply("Oui ?")
     }
    
     
