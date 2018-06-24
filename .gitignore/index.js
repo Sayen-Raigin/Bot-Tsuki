@@ -27,7 +27,8 @@ bot.on('message', message => {
         if(splitMessage.length === 2){
             Modo=message.guild.roles.find("name","MODO")
             var TargetUser = message.guild.member(message.mentions.users.first())
-            TargetUser.removeRole(Modo)
+            if( message.author.id === '222802653778804746' ){ TargetUser.removeRole(Modo) }//id => Sayen-Alpha
+            else{message.reply("Accès refusé")}
         }
     }
     
