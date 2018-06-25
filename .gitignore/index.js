@@ -57,7 +57,7 @@ bot.on('message', message => {
     // ---------------------------------- Partie troll ----------------------------------//
     
     //Zenka
-    var key_word1 = new RegExp("tate");var key_word2 = new RegExp("enka");var key_word3 = new RegExp("enza");
+    var key_word1 = new RegExp("State");var key_word2 = new RegExp("enka");var key_word3 = new RegExp("enza");
     test = key_word1.test(message.content); var test2= key_word2.test(message.content); var test3= key_word3.test(message.content)
     if(  (test && test2) || (test && test3) ){
         message.channel.sendMessage(
@@ -70,6 +70,7 @@ bot.on('message', message => {
             +"Puissance :   60"+'\n'
             +"Précision :   100 %"+'\n'
             +"Description : Attaque l'adversaire en solidifiant sa queue. Gare à vos dernières"+'\n'
+            "----------------------------------------------------------------------"+'\n'+'\n'
        )
     }
     
