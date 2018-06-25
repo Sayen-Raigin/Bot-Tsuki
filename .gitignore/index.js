@@ -57,21 +57,23 @@ bot.on('message', message => {
     // ---------------------------------- Partie troll ----------------------------------//
     
     //Zenka
-    var key_word1 = new RegExp("enka");var key_word2 = new RegExp("bisous sucrés");
+    var key_word1 = new RegExp("kif");var key_word2 = new RegExp("bisous sucrés");
     test = key_word1.test(message.content); var test2= key_word2.test(message.content)
     if(  (test && test2) && (message.author.username === 'Sαyen-∧lphα') ){
-        message.channel.sendMessage("Oui elle kiffe les bisous sucrés ! Hein Zenka")
+        message.channel.sendMessage("Zenka kiffe les bisous sucrés ! Hein Zenka")
     }
-    key_word1 = new RegExp("ui est le plus");key_word2 = new RegExp("gro");
+    key_word1 = new RegExp("ui est");key_word2 = new RegExp("gro");
     test = key_word1.test(message.content); var test2= key_word2.test(message.content)
     if(  test && test2 ){
         message.channel.sendMessage("Zenka bien sûr !")
     }
-    key_word1 = new RegExp("crie");key_word2 = new RegExp("Zenka");
+    key_word1 = new RegExp("crie");key_word2 = new RegExp("enka");
     test = key_word1.test(message.content); var test2= key_word2.test(message.content)
     if(  test && test2 ){
-        message.channel.sendMessage("Voici le crie de Kenza : http://animaux-nature.com/telechargement/cochon_3.wav")
+        //message.channel.sendMessage("Voici le crie de Kenza : http://animaux-nature.com/telechargement/cochon_3.wav")
     }
+    
+    
     
     
     // Jonnhy Joestar
