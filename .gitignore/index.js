@@ -67,6 +67,12 @@ bot.on('message', message => {
     if(  test && test2 ){
         message.channel.sendMessage("Zenka bien sûr !")
     }
+    key_word1 = new RegExp("crie");key_word2 = new RegExp("Zenka");
+    test = key_word1.test(message.content); var test2= key_word2.test(message.content)
+    if(  test && test2 ){
+        message.channel.sendMessage("http://animaux-nature.com/telechargement/cochon_3.wav")
+    }
+    
     
     // Jonnhy Joestar
     key_word1 = new RegExp("ui est le plus débil");key_word2 = new RegExp("discord");
