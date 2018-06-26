@@ -105,7 +105,7 @@ bot.on('message', message => {
     
     //Sayen
     
-    key_word1 = new RegExp("tats");key_word2 = new RegExp("enka");key_word3 = new RegExp("enza");
+    key_word1 = new RegExp("tats");key_word3 = new RegExp("Sayen-Alpha");
     test = key_word1.test(message.content); test2= key_word2.test(message.content); test3= key_word3.test(message.content)
     if(  (test && test2) || (test && test3) ){
         message.channel.sendMessage(
