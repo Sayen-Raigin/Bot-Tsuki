@@ -58,7 +58,7 @@ bot.on('message', message => {
     
     //Zenka
     
-    var key_word1 = new RegExp("State");var key_word2 = new RegExp("enka");var key_word3 = new RegExp("enza");
+    var key_word1 = new RegExp("tats");var key_word2 = new RegExp("enka");var key_word3 = new RegExp("enza");
     var test = key_word1.test(message.content); var test2= key_word2.test(message.content); var test3= key_word3.test(message.content)
     if(  (test && test2) || (test && test3) ){
         message.channel.sendMessage(
@@ -99,6 +99,27 @@ bot.on('message', message => {
     test = key_word1.test(message.content);test2 = key_word2.test(message.content);
     if(  test  &&  test2 ){
         message.channel.sendMessage("C'est Jonnhy Joestar le plus débile de mon discord !!!")
+    }
+    
+    
+    
+    //Sayen
+    
+    key_word1 = new RegExp("tats");key_word2 = new RegExp("enka");key_word3 = new RegExp("enza");
+    test = key_word1.test(message.content); test2= key_word2.test(message.content); test3= key_word3.test(message.content)
+    if(  (test && test2) || (test && test3) ){
+        message.channel.sendMessage(
+             '\n'+
+            "----------------------------------------------------------------------"+'\n'+'\n'
+            +"Prénom :      Pedo"+'\n'
+            +"Apparition:   inconnu génération"+'\n'
+            +"Type :        Pedobear"+'\n'
+            +"Move :        Pedo Move"+'\n'
+            +"Puissance :   130"+'\n'
+            +"Précision :   95 %"+'\n'
+            +"Description : Pedo Pedo Pedo je Pedo Hazi le big zizi"+'\n'
+            +"----------------------------------------------------------------------"+'\n'+'\n'
+       )
     }
     
 })
