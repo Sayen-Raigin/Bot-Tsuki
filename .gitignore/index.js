@@ -16,14 +16,15 @@ bot.on('message', message => {
             '\n'+
             "----------------------------------------------------------------------"+'\n'+'\n'
             +"$$bot                 => Info sur le bot"+'\n'+'\n'
-            +"$$Add-Role @user      => Ajoute le role modo"+'\n'+'\n'
-            +"$$Remove-Role @user      => Supprime le role modo"+'\n'+'\n'
+            +"$$add-role @user      => Ajoute le role modo"+'\n'+'\n'
+            +"$$rm-role @user      => Supprime le role modo"+'\n'+'\n'
             +"----------------------------------------------------------------------"
         )
     }
     
+    //Suppression du rôle modo
     var splitMessage = message.content.split(" ");
-    if(splitMessage[0] === Prefix+'Remove-Role'){
+    if(splitMessage[0] === Prefix+'rm-role'){
         if(splitMessage.length === 2){
             Modo=message.guild.roles.find("name","MODO")
             var TargetUser = message.guild.member(message.mentions.users.first())
@@ -32,6 +33,16 @@ bot.on('message', message => {
         }
     }
     
+    //Ajout du rôle modo
+    var splitMessage = message.content.split(" ");
+    if(splitMessage[0] === Prefix+'add-role'){
+        if(splitMessage.length === 2){
+            Modo=message.guild.roles.find("name","MODO")
+            var TargetUser = message.guild.member(message.mentions.users.first())
+            if( message.author.id === '222802653778804746' ){ TargetUser.addRole(Modo) }//id => Sayen-Alpha
+            else{message.reply("Accès refusé")}
+        }
+    }
     
     // ---------------------------------- Partie délire ----------------------------------//
     if(message.content === Prefix+'bot'){
