@@ -15,20 +15,23 @@ bot.on('message', message => {
         message.author.sendMessage(
             '\n'+
             "----------------------------------------------------------------------"+'\n'+'\n'
-            +"$$bot                 => Info sur le bot"+'\n'+'\n'
-            +"$$add-role @user      => Ajoute le role modo"+'\n'+'\n'
-            +"$$rm-role @user      => Supprime le role modo"+'\n'+'\n'
+            +"$$bot                                 => Info sur le bot"+'\n'+'\n'
+            +"$$add-role @user                      => Ajoute le rôle modo"+'\n'+'\n'
+            +"$$rm-role IDMembre @NomDurole         => Supprime un rôle"+'\n'+'\n'
             +"----------------------------------------------------------------------"
         )
     }
     
-    //Suppression du rôle modo
+    //Suppression de rôle
     var splitMessage = message.content.split(" ");
+    //console.log(message.guild.member("428326394234273794"))
     if(splitMessage[0] === Prefix+'rm-role'){
-        if(splitMessage.length === 2){
-            Modo=message.guild.roles.find("name","MODO")
-            var TargetUser = message.guild.member(message.mentions.users.first())
-            if( message.author.id === '222802653778804746' ){ TargetUser.removeRole(Modo) }//id => Sayen-Alpha
+        if(splitMessage.length === 3){
+            var Role= splitMessage[2] //Role
+            Role = Role.replace('<','');Role = Role.replace('>','');Role = Role.replace('&','');
+            Role = Role.replace('@','');
+            var TargetUser = message.guild.member(splitMessage[1]) //L'id user
+            if( message.author.id === '222802653778804746' ){ TargetUser.removeRole(Role) }//id => Sayen-Alpha
             else{message.reply("Accès refusé")}
         }
     }
