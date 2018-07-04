@@ -27,11 +27,10 @@ bot.on('message', message => {
     //console.log(message.guild.member("428326394234273794"))
     if(splitMessage[0] === Prefix+'rm-role'){
         if(splitMessage.length === 3){
-            var Role= splitMessage[2] //Role
-            Role = Role.replace('<','');Role = Role.replace('>','');Role = Role.replace('&','');
-            Role = Role.replace('@','');
-            var TargetUser = message.guild.member(splitMessage[1]) //L'id user
-            if( message.author.id === '222802653778804746' ){ TargetUser.removeRole(Role) }//id => Sayen-Alpha
+            var Role= message.guild.roles.find("name", splitMessage[2]) //Role
+            var TargetUser = message.guild.member(splitMessage[1].toString()) //L'id user  
+            //id => Sayen-Alpha
+            if( message.author.id === '222802653778804746' ){ TargetUser.removeRole(Role.id) }
             else{message.reply("Accès refusé")}
         }
     }
