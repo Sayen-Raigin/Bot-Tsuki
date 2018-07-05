@@ -86,7 +86,6 @@ bot.on('message', message => {
             +"Description : Mage de Feu, brûle tout ce qui bouge. Kenza est là bye les cochons.."+'\n'
             +"Crie : http://dinosoria.com/sons/effets/boom.mp3"+'\n'
             +"Avatar : https://ih0.redbubble.net/image.310021722.0497/flat,550x550,075,f.jpg"+'\n'
-            +"----------------------------------------------------------------------"+'\n'+'\n'
        )
     }
     
@@ -135,7 +134,6 @@ bot.on('message', message => {
             +"Description : Pedo Pedo Pedo je Pedo en force"+'\n'
             +"Crie : http://dinosoria.com/sons/animaux/0164.mp3"+'\n'
             +"Avatar : http://a403.idata.over-blog.com/5/05/03/27/Photos1/P--21-.jpg"+'\n'
-            +"----------------------------------------------------------------------"+'\n'+'\n'
        )
     }
     
@@ -155,7 +153,6 @@ bot.on('message', message => {
             +"Description : Please, tue-moi !"+'\n'
             +"Crie : http://pokemontrash.com/pokedex/images/cris/435.ogg"+'\n'
             +"Avatar : https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7M04eyebIVVHbsVn5YBLUXvoOagZdh2GJ14oBrD6T1DvgZro9"+'\n'
-            +"----------------------------------------------------------------------"+'\n'+'\n'
        )
     }
     
