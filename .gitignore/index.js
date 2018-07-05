@@ -84,6 +84,7 @@ bot.on('message', message => {
             +"Puissance :   60"+'\n'
             +"Précision :   100 %"+'\n'
             +"Description : Attaque l'adversaire en solidifiant sa queue. Gare à vos dernières"+'\n'
+            +"Crie : http://animaux-nature.com/telechargement/cochon_3.wav"+'\n'
             +"----------------------------------------------------------------------"+'\n'+'\n'
        )
     }
@@ -118,7 +119,6 @@ bot.on('message', message => {
     
     
     //Sayen
-    
     key_word1 = new RegExp("tats");key_word3 = new RegExp("Sayen-Alpha");
     test = key_word1.test(message.content); test2= key_word2.test(message.content); test3= key_word3.test(message.content)
     if(  (test && test2) || (test && test3) ){
@@ -132,6 +132,25 @@ bot.on('message', message => {
             +"Puissance :   130"+'\n'
             +"Précision :   95 %"+'\n'
             +"Description : Pedo Pedo Pedo je Pedo Hazi le big zizi"+'\n'
+            +"----------------------------------------------------------------------"+'\n'+'\n'
+       )
+    }
+    
+    //Hazi
+    key_word1 = new RegExp("tats");key_word3 = new RegExp("Hazi");
+    test = key_word1.test(message.content); test2= key_word2.test(message.content); test3= key_word3.test(message.content)
+    if(  (test && test2) || (test && test3) ){
+        message.channel.sendMessage(
+             '\n'+
+            "----------------------------------------------------------------------"+'\n'+'\n'
+            +"Prénom :      Hazi Muet"+'\n'
+            +"Apparition:   génération 2000"+'\n'
+            +"Type :        Normal"+'\n'
+            +"Move :        Suicide"+'\n'
+            +"Puissance :   30"+'\n'
+            +"Précision :   55 %"+'\n'
+            +"Description : Please, tue-moi !"+'\n'
+            +"Crie : http://pokemontrash.com/pokedex/images/cris/435.ogg"+'\n'
             +"----------------------------------------------------------------------"+'\n'+'\n'
        )
     }
