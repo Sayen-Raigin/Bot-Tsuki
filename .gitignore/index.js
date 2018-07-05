@@ -102,7 +102,7 @@ bot.on('message', message => {
     test = key_word1.test(message.content); var test2= key_word2.test(message.content)
     if(  test && test2 ){
         message.channel.sendMessage("Voici le crie de Kenza :")
-        message.channel.sendMessage("!!!play http://animaux-nature.com/telechargement/cochon_3.wav")
+        message.channel.sendMessage("http://animaux-nature.com/telechargement/cochon_3.wav")
     }
     
     
