@@ -71,7 +71,7 @@ bot.on('message', message => {
     
     //Zenka
     
-    var key_word1 = new RegExp("tats");var key_word2 = new RegExp("enka");var key_word3 = new RegExp("enza");
+    var key_word1 = new RegExp("tats");var key_word2 = new RegExp("enka");var key_word3 = new RegExp("enka");
     var test = key_word1.test(message.content); var test2= key_word2.test(message.content); var test3= key_word3.test(message.content)
     if(  (test && test2) || (test && test3) ){
         message.channel.sendMessage(
