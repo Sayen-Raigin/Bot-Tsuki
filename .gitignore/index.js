@@ -144,7 +144,7 @@ bot.on('message', message => {
     if(  (test && test2) || (test && test3) ){
         message.channel.sendMessage(
              '\n'+
-            "--------------------------------Stats Hazimuth--------------------------"+'\n'+'\n'
+            "--------------------------------Stats azimuth--------------------------"+'\n'+'\n'
             +"Prénom :      Hazi Muet"+'\n'
             +"Apparition:   génération 2000"+'\n'
             +"Type :        Normal"+'\n'
