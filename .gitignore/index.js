@@ -124,14 +124,16 @@ bot.on('message', message => {
     if(  (test && test2) || (test && test3) ){
         message.channel.sendMessage(
              '\n'+
-            "----------------------------------------------------------------------"+'\n'+'\n'
+            "-------------------------------Stats Sayen-----------------------------"+'\n'+'\n'
             +"Prénom :      Pedo"+'\n'
             +"Apparition:   inconnu génération"+'\n'
             +"Type :        Pedobear"+'\n'
             +"Move :        Pedo Move"+'\n'
             +"Puissance :   130"+'\n'
             +"Précision :   95 %"+'\n'
-            +"Description : Pedo Pedo Pedo je Pedo Hazi le big zizi"+'\n'
+            +"Description : Pedo Pedo Pedo je Pedo en force"+'\n'
+            +"Crie : http://animaux-nature.com/telechargement/cochon_3.wav"+'\n'
+            +"Avatar : http://a403.idata.over-blog.com/5/05/03/27/Photos1/P--21-.jpg"+'\n'
             +"----------------------------------------------------------------------"+'\n'+'\n'
        )
     }
@@ -151,6 +153,7 @@ bot.on('message', message => {
             +"Précision :   55 %"+'\n'
             +"Description : Please, tue-moi !"+'\n'
             +"Crie : http://pokemontrash.com/pokedex/images/cris/435.ogg"+'\n'
+            +"Avatar : https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7M04eyebIVVHbsVn5YBLUXvoOagZdh2GJ14oBrD6T1DvgZro9"+'\n'
             +"----------------------------------------------------------------------"+'\n'+'\n'
        )
     }
