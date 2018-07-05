@@ -17,7 +17,7 @@ bot.on('message', message => {
             "----------------------------------------------------------------------"+'\n'+'\n'
             +"$$bot                                 => Info sur le bot"+'\n'+'\n'
             +"$$add-role @user                      => Ajoute le rôle modo"+'\n'+'\n'
-            +"$$rm-role IDMembre @NomDurole         => Supprime un rôle"+'\n'+'\n'
+            +"$$rm-role IDMembre NomDurole          => Supprime un rôle"+'\n'+'\n'
             +"----------------------------------------------------------------------"
         )
     }
