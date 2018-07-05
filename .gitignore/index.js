@@ -144,7 +144,7 @@ bot.on('message', message => {
         message.channel.sendMessage(
              '\n'+
             "--------------------------------Stats azimuth--------------------------"+'\n'+'\n'
-            +"Prénom :      Hazi Muet"+'\n'
+            +"Prénom :      Sado"+'\n'
             +"Apparition:   génération 2000"+'\n'
             +"Type :        R.I.P"+'\n'
             +"Move :        Suicide"+'\n'
