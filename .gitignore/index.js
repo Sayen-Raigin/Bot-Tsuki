@@ -96,12 +96,13 @@ bot.on('message', message => {
     key_word1 = new RegExp("ui est");key_word2 = new RegExp("gro");
     test = key_word1.test(message.content); var test2= key_word2.test(message.content)
     if(  test && test2 ){
-        message.channel.sendMessage("Zenka bien sûr !")
+        message.channel.sendMessage("Zenka tu n'aurais pas pris du poids ce mois-ci ?")
     }
     key_word1 = new RegExp("crie");key_word2 = new RegExp("enka");
     test = key_word1.test(message.content); var test2= key_word2.test(message.content)
     if(  test && test2 ){
-        //message.channel.sendMessage("Voici le crie de Kenza : http://animaux-nature.com/telechargement/cochon_3.wav")
+        message.channel.sendMessage("Voici le crie de Kenza :")
+        message.channel.sendMessage("!!!play http://animaux-nature.com/telechargement/cochon_3.wav")
     }
     
     
