@@ -132,7 +132,7 @@ bot.on('message', message => {
             +"Puissance :   130"+'\n'
             +"Précision :   95 %"+'\n'
             +"Description : Pedo Pedo Pedo je Pedo en force"+'\n'
-            +"Crie : http://animaux-nature.com/telechargement/cochon_3.wav"+'\n'
+            +"Crie : http://dinosoria.com/sons/animaux/0164.mp3"+'\n'
             +"Avatar : http://a403.idata.over-blog.com/5/05/03/27/Photos1/P--21-.jpg"+'\n'
             +"----------------------------------------------------------------------"+'\n'+'\n'
        )
