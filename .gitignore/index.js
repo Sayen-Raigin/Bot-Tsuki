@@ -76,7 +76,7 @@ bot.on('message', message => {
     if(  (test && test2) || (test && test3) ){
         message.channel.sendMessage(
              '\n'+
-            "----------------------------------------------------------------------"+'\n'+'\n'
+            "-------------------------------Stats Kenza------------------------------"+'\n'+'\n'
             +"Prénom :      Kenza"+'\n'
             +"Apparition:   seconde génération"+'\n'
             +"Type :        Grosse patate"+'\n'
@@ -142,7 +142,7 @@ bot.on('message', message => {
     if(  (test && test2) || (test && test3) ){
         message.channel.sendMessage(
              '\n'+
-            "----------------------------------------------------------------------"+'\n'+'\n'
+            "--------------------------------Stats Hazimuth--------------------------"+'\n'+'\n'
             +"Prénom :      Hazi Muet"+'\n'
             +"Apparition:   génération 2000"+'\n'
             +"Type :        Normal"+'\n'
