@@ -89,10 +89,10 @@ bot.on('message', message => {
        )
     }
     
-    var key_word1 = new RegExp("kif"); var key_word2 = new RegExp("bisous sucrés");
+    var key_word1 = new RegExp("enka"); var key_word2 = new RegExp("bisou");
     var test = key_word1.test(message.content); var test2= key_word2.test(message.content)
     if(  (test && test2) && (message.author.username === 'Sαyen-∧lphα') ){
-        message.channel.sendMessage("Zenka kiffe les bisous sucrés ! Hein Zenka")
+        message.channel.sendMessage("Zenka kiffe les bisous sucrés ;)")
     }
     key_word1 = new RegExp("ui est");key_word2 = new RegExp("gro");
     test = key_word1.test(message.content); var test2= key_word2.test(message.content)
