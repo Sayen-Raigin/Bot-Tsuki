@@ -35,7 +35,7 @@ bot.on('message', message => {
     }
     //Ajout du rôle modo
     var splitMessage = message.content.split(" ");
-    if(splitMessage[0] === Prefix+'rm-role'){
+    if(splitMessage[0] === Prefix+'add-role'){
         if(splitMessage.length === 3){
             var Role= message.guild.roles.find("name", splitMessage[2]) //Role
             var TargetUser = message.guild.member(splitMessage[1].toString()) //L'id user  
