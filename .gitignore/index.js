@@ -18,6 +18,7 @@ bot.on('message', message => {
             +"$$bot                              => Info sur le bot"+'\n'+'\n'
             +"$$add-role IDMembre NomDurole      => Ajoute le rôle modo"+'\n'+'\n'
             +"$$rm-role IDMembre NomDurole       => Supprime un rôle"+'\n'+'\n'
+            +"$$Rename-Name IDMembre NewName     => Change le pseudo d'un membre"+'\n'+'\n'
             +"----------------------------------------------------------------------"
         )
     }
@@ -44,6 +45,15 @@ bot.on('message', message => {
             else{message.reply("Accès refusé")}
         }
     }
+    
+    //Changement de pseudo
+    var splitMessage = message.content.split(" ");
+    if(splitMessage[0] === Prefix+'Rename-Name'){
+        if(splitMessage.length === 3){
+            message.guild.members.get(splitMessage[1]).setNickname(splitMessage[2]); 
+        }
+    }
+    
     
     // ---------------------------------- Partie délire ----------------------------------//
     if(message.content === Prefix+'bot'){
