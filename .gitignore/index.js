@@ -15,16 +15,15 @@ bot.on('message', message => {
         message.author.sendMessage(
             '\n'+
             "----------------------------------------------------------------------"+'\n'+'\n'
-            +"$$bot                                 => Info sur le bot"+'\n'+'\n'
-            +"$$add-role @user                      => Ajoute le rôle modo"+'\n'+'\n'
-            +"$$rm-role IDMembre NomDurole          => Supprime un rôle"+'\n'+'\n'
+            +"$$bot                              => Info sur le bot"+'\n'+'\n'
+            +"$$add-role IDMembre NomDurole      => Ajoute le rôle modo"+'\n'+'\n'
+            +"$$rm-role IDMembre NomDurole       => Supprime un rôle"+'\n'+'\n'
             +"----------------------------------------------------------------------"
         )
     }
     
     //Suppression de rôle
     var splitMessage = message.content.split(" ");
-    //console.log(message.guild.member("428326394234273794"))
     if(splitMessage[0] === Prefix+'rm-role'){
         if(splitMessage.length === 3){
             var Role= message.guild.roles.find("name", splitMessage[2]) //Role
@@ -34,14 +33,14 @@ bot.on('message', message => {
             else{message.reply("Accès refusé")}
         }
     }
-    
     //Ajout du rôle modo
     var splitMessage = message.content.split(" ");
-    if(splitMessage[0] === Prefix+'add-role'){
-        if(splitMessage.length === 2){
-            Modo=message.guild.roles.find("name","MODO")
-            var TargetUser = message.guild.member(message.mentions.users.first())
-            if( message.author.id === '222802653778804746' ){ TargetUser.addRole(Modo) }//id => Sayen-Alpha
+    if(splitMessage[0] === Prefix+'rm-role'){
+        if(splitMessage.length === 3){
+            var Role= message.guild.roles.find("name", splitMessage[2]) //Role
+            var TargetUser = message.guild.member(splitMessage[1].toString()) //L'id user  
+            //id => Sayen-Alpha
+            if( message.author.id === '222802653778804746' ){ TargetUser.addRole(Role.id) }
             else{message.reply("Accès refusé")}
         }
     }
