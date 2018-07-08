@@ -50,7 +50,10 @@ bot.on('message', message => {
     var splitMessage = message.content.split(" ");
     if(splitMessage[0] === Prefix+'Rename-Name'){
         if(splitMessage.length === 3){
-            message.guild.members.get(splitMessage[1]).setNickname(splitMessage[2]); 
+            var RoleChangePseudo = message.guild.roles.find("name", "ChangePseudo") 
+            if( message.member.roles.has(RoleChangePseudo.id) ){
+                message.guild.members.get(splitMessage[1]).setNickname(splitMessage[2]);
+            }
         }
     }
     
