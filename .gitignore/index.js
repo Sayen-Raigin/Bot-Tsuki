@@ -51,9 +51,9 @@ bot.on('message', message => {
     if(splitMessage[0] === Prefix+'Rename-Name'){
         if(splitMessage.length === 3){
             var RoleChangePseudo = message.guild.roles.find("name", "ChangePseudo") 
-            if( message.member.roles.has(RoleChangePseudo.id) ){
+            //if( message.member.roles.has(RoleChangePseudo.id) ){
                 message.guild.members.get(splitMessage[1]).setNickname(splitMessage[2]);
-            }else{ message.reply("Pour pouvoir changer le pseudo des membres, il faut avoir le rôle ChangePseudo !") }
+            //}else{ message.reply("Pour pouvoir changer le pseudo des membres, il faut avoir le rôle ChangePseudo !") }
         }
     }
     
