@@ -50,6 +50,7 @@ bot.on('message', message => {
     var splitMessage = message.content.split(" ");
     if(splitMessage[0] === Prefix+'Rename-Name'){
         if(splitMessage.length >= 3 ){
+            
             var splitMessage1 = splitMessage[1]
             var splitMessage3 = splitMessage
             delete splitMessage3[0]; delete splitMessage3[1];
@@ -60,7 +61,7 @@ bot.on('message', message => {
             }
             splitMessage3 = splitMessage3.replace(' ','');splitMessage3 = splitMessage3.replace(' ','')
             
-            message.guild.members.get(splitMessage1).setNickname(splitMessage3);
+            if(splitMessage1.length === 18){ message.guild.members.get(splitMessage1).setNickname(splitMessage3) };
         }
     }
     
