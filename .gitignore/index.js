@@ -61,7 +61,7 @@ bot.on('message', message => {
             }
             splitMessage3 = splitMessage3.replace(' ','');splitMessage3 = splitMessage3.replace(' ','')
             
-            if(splitMessage1.length === 18){ message.guild.members.get(splitMessage1).setNickname(splitMessage3) };
+            if(splitMessage1.length === 18){ message.guild.members.get(splitMessage1).setNickname(splitMessage3) }else{message.reply("L'ID dépasse 18 char")};
         }
     }
     
