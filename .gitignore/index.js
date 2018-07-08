@@ -49,11 +49,18 @@ bot.on('message', message => {
     //Changement de pseudo
     var splitMessage = message.content.split(" ");
     if(splitMessage[0] === Prefix+'Rename-Name'){
-        if(splitMessage.length === 3){
-            var RoleChangePseudo = message.guild.roles.find("name", "ChangePseudo") 
-            //if( message.member.roles.has(RoleChangePseudo.id) ){
-                message.guild.members.get(splitMessage[1]).setNickname(splitMessage[2]);
-            //}else{ message.reply("Pour pouvoir changer le pseudo des membres, il faut avoir le rôle ChangePseudo !") }
+        if(splitMessage.length >= 3 ){
+            var splitMessage1 = splitMessage[1]
+            var splitMessage3 = splitMessage
+            delete splitMessage3[0]; delete splitMessage3[1];
+            //Debug console.log( test1 )
+            var i = 0, strLength = splitMessage3.length; 
+            for(i; i < strLength; i++) {
+                splitMessage3 = splitMessage3.toString().replace(',',' ')
+            }
+            splitMessage3 = splitMessage3.replace(' ','');splitMessage3 = splitMessage3.replace(' ','')
+            
+            message.guild.members.get(splitMessage1).setNickname(splitMessage3);
         }
     }
     
@@ -131,12 +138,12 @@ bot.on('message', message => {
     
     
     //Sayen
-    key_word1 = new RegExp("tats");key_word3 = new RegExp("Sayen-Alpha");
+    key_word1 = new RegExp("tats");key_word3 = new RegExp("ayen");
     test = key_word1.test(message.content); test2= key_word2.test(message.content); test3= key_word3.test(message.content)
     if(  (test && test2) || (test && test3) ){
         message.channel.sendMessage(
              '\n'+
-            "-------------------------------Stats Sayen-----------------------------"+'\n'+'\n'
+            "-------------------------------Stats Saye'n-Raigin-----------------------------"+'\n'+'\n'
             +"Prénom :      Pedo"+'\n'
             +"Apparition:   inconnu génération"+'\n'
             +"Type :        Pedobear"+'\n'
