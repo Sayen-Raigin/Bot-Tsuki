@@ -23,7 +23,7 @@ bot.on('message', message => {
         )
     }
     
-    //Suppression de rôle
+    //Suppression d'un rôle
     var splitMessage = message.content.split(" ");
     if(splitMessage[0] === Prefix+'rm-role'){
         if(splitMessage.length === 3){
@@ -31,10 +31,10 @@ bot.on('message', message => {
             var TargetUser = message.guild.member(splitMessage[1].toString()) //L'id user  
             //id => Sayen-Alpha
             if( message.author.id === '222802653778804746' ){ TargetUser.removeRole(Role.id) }
-            else{message.reply("Accès refusé")}
+            else{message.reply("Je t'aime ^^")}
         }
     }
-    //Ajout du rôle modo
+    //Ajout d'un rôle
     var splitMessage = message.content.split(" ");
     if(splitMessage[0] === Prefix+'add-role'){
         if(splitMessage.length === 3){
@@ -42,7 +42,7 @@ bot.on('message', message => {
             var TargetUser = message.guild.member(splitMessage[1].toString()) //L'id user  
             //id => Sayen-Alpha
             if( message.author.id === '222802653778804746' ){ TargetUser.addRole(Role.id) }
-            else{message.reply("Accès refusé")}
+            else{message.reply("Je t'aime ^^")}
         }
     }
     
