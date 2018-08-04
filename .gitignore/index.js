@@ -158,12 +158,12 @@ bot.on('message', message => {
     }
     
     //Hazi
-    key_word1 = new RegExp("tats");key_word3 = new RegExp("Hazi");
+    key_word1 = new RegExp("stats");key_word3 = new RegExp("hazi");
     test = key_word1.test(message.content); test2= key_word2.test(message.content); test3= key_word3.test(message.content)
     if(  (test && test2) || (test && test3) ){
         message.channel.sendMessage(
              '\n'+
-            "--------------------------------Stats azimuth--------------------------"+'\n'+'\n'
+            "--------------------------------Stats Hazimuth--------------------------"+'\n'+'\n'
             +"Prénom :      Sado"+'\n'
             +"Apparition:   génération 2000"+'\n'
             +"Type :        R.I.P"+'\n'
@@ -173,6 +173,25 @@ bot.on('message', message => {
             +"Description : Please, tue-moi !"+'\n'
             +"Crie : http://pokemontrash.com/pokedex/images/cris/435.ogg"+'\n'
             +"Avatar : https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7M04eyebIVVHbsVn5YBLUXvoOagZdh2GJ14oBrD6T1DvgZro9"+'\n'
+       )
+    }
+    
+     //Myuki
+    key_word1 = new RegExp("stats");key_word2 = new RegExp("iyuki");key_word3 = new RegExp("<@217608165955469313>");
+    test = key_word1.test(message.content); test2= key_word2.test(message.content); test3= key_word3.test(message.content)
+    if(  (test && test2) || (test && test3) ){
+        message.channel.sendMessage(
+             '\n'+
+            "--------------------------------Stats azimuth--------------------------"+'\n'+'\n'
+            +"Prénom :      Triso"+'\n'
+            +"Apparition:   génération 2"+'\n'
+            +"Type :        Poison"+'\n'
+            +"Move :        Bave bien baveuse"+'\n'
+            +"Puissance :   35"+'\n'
+            +"Précision :   95 %"+'\n'
+            +"Description : Je sais pas quoi dire de ma vie. Ah oui je rage pas mal ;p"+'\n'
+            +"Crie : http://www.pokemontrash.com/pokedex/images/cris/272.ogg"+'\n'
+            +"Avatar : http://www.pokemontrash.com/pokedex/images/sugimori/272.png"+'\n'
        )
     }
     
