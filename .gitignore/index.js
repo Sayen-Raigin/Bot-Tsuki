@@ -177,12 +177,12 @@ bot.on('message', message => {
     }
     
      //Myuki
-    key_word1 = new RegExp("stats");key_word2 = new RegExp("iyuki");key_word3 = new RegExp("<@217608165955469313>");
+    key_word1 = new RegExp("stats");key_word2 = new RegExp("miyuki");key_word3 = new RegExp("<@217608165955469313>");
     test = key_word1.test(message.content); test2= key_word2.test(message.content); test3= key_word3.test(message.content)
     if(  (test && test2) || (test && test3) ){
         message.channel.sendMessage(
              '\n'+
-            "--------------------------------Stats azimuth--------------------------"+'\n'+'\n'
+            "--------------------------------Stats Miyuki--------------------------"+'\n'+'\n'
             +"Prénom :      Triso"+'\n'
             +"Apparition:   génération 2"+'\n'
             +"Type :        Poison"+'\n'
