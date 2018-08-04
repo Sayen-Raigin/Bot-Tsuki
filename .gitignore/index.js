@@ -186,13 +186,14 @@ bot.on('message', message => {
             +"Prénom :      Triso"+'\n'
             +"Apparition:   génération 2"+'\n'
             +"Type :        Poison"+'\n'
-            +"Move :        Bave bien baveuse"+'\n'
+            +"Move :        Proute-Bave bien baveuse"+'\n'
             +"Puissance :   35"+'\n'
             +"Précision :   95 %"+'\n'
-            +"Description : Je sais pas quoi dire de ma vie. Ah oui je rage pas mal ;p"+'\n'
+            +"Description : Proute2.0. Je sais pas quoi dire de ma vie. Ah oui je rage pas mal ;p"+'\n'
             +"Crie : http://www.pokemontrash.com/pokedex/images/cris/272.ogg"+'\n'
             +"Avatar : http://www.pokemontrash.com/pokedex/images/sugimori/272.png"+'\n'
        )
+       message.guild.members.get("217608165955469313").setNickname("Proute 2.0")
     }
     
 })
