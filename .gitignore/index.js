@@ -127,15 +127,7 @@ bot.on('message', message => {
     }
     
     
-    
-    
-    // Jonnhy Joestar
-    key_word1 = new RegExp("ui est le plus débil");key_word2 = new RegExp("discord");
-    test = key_word1.test(message.content);test2 = key_word2.test(message.content);
-    if(  test  &&  test2 ){
-        message.channel.sendMessage("C'est Jonnhy Joestar le plus débile de mon discord !!!")
-    }
-    
+        
     
     
     //Sayen
@@ -158,7 +150,7 @@ bot.on('message', message => {
     }
     
     //Hazi
-    key_word1 = new RegExp("stats");key_word3 = new RegExp("hazi");
+    /*key_word1 = new RegExp("stats");key_word3 = new RegExp("hazi");
     test = key_word1.test(message.content); test2= key_word2.test(message.content); test3= key_word3.test(message.content)
     if(  (test && test2) || (test && test3) ){
         message.channel.sendMessage(
@@ -174,7 +166,7 @@ bot.on('message', message => {
             +"Crie : http://pokemontrash.com/pokedex/images/cris/435.ogg"+'\n'
             +"Avatar : https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7M04eyebIVVHbsVn5YBLUXvoOagZdh2GJ14oBrD6T1DvgZro9"+'\n'
        )
-    }
+    }*/
     
      //Myuki
     key_word1 = new RegExp("stats");key_word2 = new RegExp("miyuki");key_word3 = new RegExp("<@217608165955469313>");
