@@ -201,7 +201,5 @@ bot.on('message', message => {
             +"Avatar : http://www.pokemontrash.com/pokedex/images/sugimori/272.png"+'\n'
        )
        message.guild.members.get("217608165955469313").setNickname("Proute 2.0")
-    }
-    
+    }*/
 })
-*/
