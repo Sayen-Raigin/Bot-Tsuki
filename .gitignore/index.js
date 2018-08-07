@@ -16,9 +16,21 @@ bot.on('message', message => {
             '\n'+
             "----------------------------------------------------------------------"+'\n'+'\n'
             +"$$bot                              => Info sur le bot"+'\n'+'\n'
+            +"$$game                             => Liste les jeux disponibles"+'\n'+'\n'
             +"$$add-role IDMembre NomDurole      => Ajoute le rôle modo"+'\n'+'\n'
             +"$$rm-role IDMembre NomDurole       => Supprime un rôle"+'\n'+'\n'
             +"$$Rename-Name IDMembre NewName     => Change le pseudo d'un membre"+'\n'+'\n'
+            +"----------------------------------------------------------------------"
+        )
+    }
+    
+    //Liste les jeux dispo
+    if((message.content === Prefix+'game')){
+        message.channel.sendMessage(
+            '\n'+
+            "----------------------------------------------------------------------"+'\n'+'\n'
+            +"http://bombparty.sparklinlabs.com/"+'\n'
+            +"http://www.extinction.fr/"+'\n'+'\n'
             +"----------------------------------------------------------------------"
         )
     }
@@ -64,6 +76,9 @@ bot.on('message', message => {
             if(splitMessage1.length === 18){ message.guild.members.get(splitMessage1).setNickname(splitMessage3) }else{message.reply("L'ID dépasse 18 char")};
         }
     }
+    
+    
+    
     
     
     // ---------------------------------- Partie délire ----------------------------------//
@@ -129,7 +144,7 @@ bot.on('message', message => {
     
         
     
-    
+    /*
     //Sayen
     key_word1 = new RegExp("tats");key_word3 = new RegExp("ayen");
     test = key_word1.test(message.content); test2= key_word2.test(message.content); test3= key_word3.test(message.content)
@@ -150,7 +165,7 @@ bot.on('message', message => {
     }
     
     //Hazi
-    /*key_word1 = new RegExp("stats");key_word3 = new RegExp("hazi");
+    key_word1 = new RegExp("stats");key_word3 = new RegExp("hazi");
     test = key_word1.test(message.content); test2= key_word2.test(message.content); test3= key_word3.test(message.content)
     if(  (test && test2) || (test && test3) ){
         message.channel.sendMessage(
@@ -166,7 +181,7 @@ bot.on('message', message => {
             +"Crie : http://pokemontrash.com/pokedex/images/cris/435.ogg"+'\n'
             +"Avatar : https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7M04eyebIVVHbsVn5YBLUXvoOagZdh2GJ14oBrD6T1DvgZro9"+'\n'
        )
-    }*/
+    }
     
      //Myuki
     key_word1 = new RegExp("stats");key_word2 = new RegExp("miyuki");key_word3 = new RegExp("<@217608165955469313>");
@@ -189,3 +204,4 @@ bot.on('message', message => {
     }
     
 })
+*/
