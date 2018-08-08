@@ -40,9 +40,8 @@ bot.on('message', message => {
     if(splitMessage[0] === Prefix+'rm-role'){
         if(splitMessage.length === 3){
             var Role= message.guild.roles.find("name", splitMessage[2]) //Role
-            var TargetUser = message.guild.member(splitMessage[1].toString()) //L'id user  
-            //id => Sayen-Alpha
-            if( message.author.id === '222802653778804746' ){ TargetUser.removeRole(Role.id) }
+            var TargetUser = message.guild.member(splitMessage[1].toString())
+            if( message.author.id === process.env.AuthorSetsu ){ TargetUser.removeRole(Role.id) }
             else{message.reply("Je t'aime ^^")}
         }
     }
@@ -51,9 +50,8 @@ bot.on('message', message => {
     if(splitMessage[0] === Prefix+'add-role'){
         if(splitMessage.length === 3){
             var Role= message.guild.roles.find("name", splitMessage[2]) //Role
-            var TargetUser = message.guild.member(splitMessage[1].toString()) //L'id user  
-            //id => Sayen-Alpha
-            if( message.author.id === '222802653778804746' ){ TargetUser.addRole(Role.id) }
+            var TargetUser = message.guild.member(splitMessage[1].toString())
+            if( message.author.id === process.env.AuthorSetsu ){ TargetUser.addRole(Role.id) }
             else{message.reply("Je t'aime ^^")}
         }
     }
@@ -200,6 +198,6 @@ bot.on('message', message => {
             +"Crie : http://www.pokemontrash.com/pokedex/images/cris/272.ogg"+'\n'
             +"Avatar : http://www.pokemontrash.com/pokedex/images/sugimori/272.png"+'\n'
        )
-       message.guild.members.get("217608165955469313").setNickname("Proute 2.0")
+       message.guild.members.get(process.env.Myuki).setNickname("Proute 2.0")
     }*/
 })
